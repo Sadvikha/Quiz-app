@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy</title>
+
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: grey;
+}
+
+.cen{
+text-align: center;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+</style>
+
+</head>
+<body>
+
+<ul>
+    <li ><a href="/home" >Home</a></li>
+
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" ">Take Quiz</a>
+    <div class="dropdown-content">
+      <a href="/easy">General Knowledge (Easy)</a>
+      <a href="/medium">General Knowledge (Medium)</a>
+      <a href="/hard">General Knowledge (Hard)</a>
+      <a href="/heritage">Heritage</a>
+      <a href="/politics">Politics</a>
+      <a href="/sports">Sports</a>
+    </div>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/about">About</a></li>
+    <li style="float:right"><a href="/signup" >Sign Up</a></li>
+    <li style="float:right"><a href="/login" >Login</a></li>
+
+  </li>
+
+
+
+
+</ul>
+<div class="cen">
+<h1>Easy Quiz </h1>
+</div>
+<br><br>
+
+<div class="cen">
+    <h1><u>Instructions for MCQ questions:</u></h1>
+    <h2>Each question in the first section is a multiple-choice question with four answer choices.<br> Read each question and answer choice carefully and choose the ONE best answer.<br> Try to answer all questions.<br> In general, if you have some knowledge about a question, it is better to try to answer it.</h2>
+</div>
+<br><br><br><br>
+
+
+<a href="/easyquiz1">
+      <div class="cen">
+    <input type="submit" value="Take Quiz">
+      </div>
+</a>
+
+
+</body>
+</html>

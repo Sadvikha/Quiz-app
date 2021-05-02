@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medium Quiz</title>
+
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: grey;
+}
+
+.cen{
+text-align: center;
+}
+
+
+.rig{
+text-align: right;
+margin-right:20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container {
+  border-radius: 5px;
+  background-image: linear-gradient(black, #dcdcdc);;
+  padding: 20px;
+  margin-left :0px;
+  width: 93%;
+  color: white;
+}
+
+
+.lefcen{
+margin-left :50px;
+}
+
+.lefcen2{
+margin-left :75px;
+}
+</style>
+
+</head>
+<body>
+
+<ul>
+    <li ><a href="/home" >Home</a></li>
+
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"">Take Quiz</a>
+    <div class="dropdown-content">
+      <a href="/easy">General Knowledge (Easy)</a>
+      <a href="/medium">General Knowledge (Medium)</a>
+      <a href="/hard">General Knowledge (Hard)</a>
+      <a href="/heritage">Heritage</a>
+      <a href="/politics">Politics</a>
+      <a href="/sports">Sports</a>
+    </div>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/about">About</a></li>
+    <li style="float:right"><a href="/signup" >Sign Up</a></li>
+    <li style="float:right"><a href="/login" >Login</a></li>
+
+  </li>
+
+
+
+
+</ul>
+<div class="cen">
+
+<h1>General Knowledge (Medium)</h1>
+
+</div>
+<hr><br>
+
+<div class="lefcen">
+    <div class="container">
+<div class="cen">
+<h1> Questions</h1>
+</div><hr>
+<br><br>
+
+    <div class="lefcen2">
+    <h2> 1) What's the Capital of India?</h2>
+        <h2>
+
+         <input type="radio" name="quiz" id="1" onclick="clickRadio(this)" value="1">
+        <label class="radiocontainer" id="label1">Delhi<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="2" onclick="clickRadio(this)" value="2">
+         <label class="radiocontainer" id="label2">Mumbai<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="3" onclick="clickRadio(this)" value="3">
+         <label class="radiocontainer" id="label3">Chennai<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="4" onclick="clickRadio(this)" value="4">
+         <label class="radiocontainer" id="label4">Kolkata<span class="checkmark"></span></label><br>
+
+</h2>
+        </div>
+        <br><br>
+
+
+     <div class="lefcen2">
+    <h2> 2) When is World Water Day celebrated?</h2>
+        <h2>
+
+         <input type="radio" name="quiz" id="5" onclick="clickRadio(this)" value="5">
+        <label class="radiocontainer" id="label5">22nd March<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="6" onclick="clickRadio(this)" value="6">
+         <label class="radiocontainer" id="label6">23rd March<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="7" onclick="clickRadio(this)" value="7">
+         <label class="radiocontainer" id="label7">25th March<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="8" onclick="clickRadio(this)" value="8">
+         <label class="radiocontainer" id="label8">20th March<span class="checkmark"></span></label><br>
+
+</h2>
+        </div>
+        <br><br>
+
+
+
+
+         <div class="lefcen2">
+    <h2> 3) Hiroshima Day is observed on:</h2>
+        <h2>
+
+         <input type="radio" name="quiz" id="9" onclick="clickRadio(this)" value="9">
+        <label class="radiocontainer" id="label9">3 August<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="10" onclick="clickRadio(this)" value="10">
+         <label class="radiocontainer" id="label10">4 August<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="11" onclick="clickRadio(this)" value="11">
+         <label class="radiocontainer" id="label11">5 August<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="12" onclick="clickRadio(this)" value="12">
+         <label class="radiocontainer" id="label12">6 August<span class="checkmark"></span></label><br>
+
+</h2>
+        </div>
+        <br><br>
+
+
+        <div class="lefcen2">
+    <h2> 4) 15 August is celebrated as:</h2>
+        <h2>
+
+         <input type="radio" name="quiz" id="13" onclick="clickRadio(this)" value="13">
+        <label class="radiocontainer" id="label13">Independence Day in India<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="14" onclick="clickRadio(this)" value="14">
+         <label class="radiocontainer" id="label14">Victory over Japan Day<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="15" onclick="clickRadio(this)" value="15">
+         <label class="radiocontainer" id="label15">National Day of mourning (Bangladesh)<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="16" onclick="clickRadio(this)" value="16">
+         <label class="radiocontainer" id="label16">All the above<span class="checkmark"></span></label><br>
+
+</h2>
+        </div>
+        <br><br>
+
+
+        <div class="lefcen2">
+    <h2> 5) Who regulates finance market in India?</h2>
+        <h2>
+
+         <input type="radio" name="quiz" id="17" onclick="clickRadio(this)" value="17">
+        <label class="radiocontainer" id="label17">Ministry of finance<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="18" onclick="clickRadio(this)" value="18">
+         <label class="radiocontainer" id="label18">Reserve bank of India<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="19" onclick="clickRadio(this)" value="19">
+         <label class="radiocontainer" id="labe19">Ministry of trade and commerce<span class="checkmark"></span></label><br>
+
+
+         <input type="radio" name="quiz" id="20" onclick="clickRadio(this)" value="20">
+         <label class="radiocontainer" id="label20">SEBI<span class="checkmark"></span></label><br>
+
+</h2>
+        </div>
+        <br><br>
+
+
+
+<br>
+<hr><br>
+
+        <div class="rig">
+            <a href="/mediumresult">
+    <input type="submit" value="Submit">
+            </a>
+      </div>
+
+
+
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
